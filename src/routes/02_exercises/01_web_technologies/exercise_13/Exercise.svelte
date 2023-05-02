@@ -1,3 +1,4 @@
+
 <script>
 	const videos = [
 		{ url: 'https://www.youtube.com/watch?v=S4bn6gg-BmE', name: 'Messi' },
@@ -8,5 +9,9 @@
 
 <div>
 	<h5>Famous soccer players:</h5>
-	<!--  -->
+	{#each videos as video}
+		<p>
+		{video.name}: ({video.url})
+		</p>
+	{/each}
 </div>

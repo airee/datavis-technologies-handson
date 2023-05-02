@@ -1,7 +1,8 @@
-<div class="answer">My name is ...</div>
+
+<div class="answer">My name is <span style="color:red"><strong>Aire</strong></span></div>
 
 <style>
   div.answer {
-    color: rgb(2, 96, 45);
+    color: blue;
   }
 </style>
