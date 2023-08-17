@@ -1,2 +1,7 @@
-The best visual channels ordered by Mackinlay's ranking: position,
+
+
+
+<div A>
+    The best visual channels ordered by Mackinlay's ranking: position,
 length, and angle.
+</div>
