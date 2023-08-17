@@ -1,5 +1,5 @@
 <script>
-  export let count = 0;
+  export let answer = 0;
 </script>
 
-<p>{count}</p>
+<p>{answer}</p>
