@@ -1,5 +1,5 @@
 <script>
-	import Box from './inp.svelte'
+	import Box from './Exercise_child.svelte'
 	let p = 'MyName'
 	$: nameUpper = p.toUpperCase()
 </script>
