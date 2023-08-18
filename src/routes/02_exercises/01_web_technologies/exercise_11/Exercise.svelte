@@ -4,6 +4,5 @@
 
 
 <div>
-   Answer to life the universe and everything: 
     <Answer/>
 </div>
