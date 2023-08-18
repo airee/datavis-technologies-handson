@@ -1,5 +1,8 @@
 <script>
-  export let answer = 42;
+  export let person = 'valueInChild'
 </script>
 
-<p>{answer}</p>
+<input type="text" placeholder="put the name here" bind:value={person} />
+
+<!-- <p>{answer}</p> -->
+
