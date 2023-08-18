@@ -4,5 +4,5 @@
 
 
 <div>
-    <Answer/>
+   The answer is {Answer}
 </div>
