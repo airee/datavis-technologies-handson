@@ -1,6 +1,5 @@
 <script>
-	export let person = 'valueInChild'
+  export let count = 0;
 </script>
 
-<input type="text" placeholder="put the name here" bind:value={person} />
-
+<p>{count}</p>

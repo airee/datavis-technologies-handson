@@ -1,11 +1,8 @@
 <script>
-	import Box from './Exercise_child.svelte'
-	let p = 'MyName'
-	$: nameUpper = p.toUpperCase()
+	import B from './Exercise_child.svelte'
+  	let myCountingVariable = 42;
 </script>
 
-<Box bind:person={p} />
 
-<p>Reactive value in the parent component: {nameUpper}</p>
-
-<hr />
+<p> The answer to life, the Universe, and everything, is </p>
+<B count={myCountingVariable} />
