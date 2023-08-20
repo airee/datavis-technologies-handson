@@ -11,7 +11,7 @@
 	<h5>Famous soccer players:</h5>
 	{#each videos as video}
 		<p>
-		{video.name}: ({video.url})
+		{video.name}: (<a href= {video.url}> {video.url} </a>)
 		</p>
 	{/each}
 </div>
