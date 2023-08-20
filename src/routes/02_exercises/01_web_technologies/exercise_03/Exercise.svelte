@@ -27,3 +27,9 @@ const items = [
     The best visual channels ordered by Mackinlay's ranking: position,
 length, and angle.
 </p>
+
+<ul>
+<li class="unimportant">Eggs</li>
+<li class="unimportant">Milk</li>
+<li>Toothpaste</li>
+</ul>
