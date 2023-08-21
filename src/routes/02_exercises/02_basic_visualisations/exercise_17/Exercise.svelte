@@ -13,17 +13,16 @@
     // Array
     const values = [2, 4, 6, 7, 9];
   </script>
-  
+
+
   <svg viewBox="0 0 {width} {height}">
     <g transform="translate({margin.left},{margin.top})">
     <g transform="translate({values})">
 
-    <circle cx = {innerheight / 2} cy = {values[1]} r=10 />
+    <circle cx = {innerHeight / 2} cy = {values} r=10 />
       <!--  -->
     </g>
   </svg>
   
 
-  circle {
-      fill: skyblue;
-    }
+  
