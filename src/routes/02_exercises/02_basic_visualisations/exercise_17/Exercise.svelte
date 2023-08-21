@@ -8,8 +8,11 @@
   
     import { scaleLinear } from 'd3-scale';
     import { scaleLog } from 'd3-scale';
-    const scale = d3.scaleLog().domain([0, 200]);
-    
+    const scale = d3.scaleLog().
+        domain([2, 9]).
+        range([0, 3]);
+  
+
     const values = [2, 4, 6, 7, 9];
     const logvalues = scale({values});
   </script>
@@ -19,11 +22,11 @@
     <g transform="translate({margin.left},{margin.top})"> 
      <!-- <g transform={scale}> -->
     
-      <circle cx={values[0]} cy={innerHeight / 2} r="2" />
-      <circle cx={values[1] } cy={innerHeight / 2}  r="2" />
-      <circle cx={values[2] } cy={innerHeight / 2} r="2" />
-      <circle cx={values[3]} cy={innerHeight / 2}  r="2" />
-      <circle cx={values[4]} cy={innerHeight / 2}  r="2" />
+      <circle cx={values} cy={innerHeight / 2} r="2" />
+      <circle cx={values } cy={innerHeight / 2}  r="2" />
+      <circle cx={values } cy={innerHeight / 2} r="2" />
+      <circle cx={values} cy={innerHeight / 2}  r="2" />
+      <circle cx={values} cy={innerHeight / 2}  r="2" />
       
         <!--  -->
     </g>
