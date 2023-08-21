@@ -7,7 +7,8 @@
     const innerHeight = height - margin.top - margin.bottom;
   
     import { scaleLinear } from 'd3-scale';
-    const scale = scaleLog().domain([0, 10]);
+    import { scaleLog } from 'd3-scale';
+    const scale = scaleLog().domain([0, 200]);
     
 
     // Array
@@ -15,11 +16,15 @@
   </script>
 
 
-  <svg viewBox="0 0 {width} {height}">
-    <g transform="translate({margin.left},{margin.top})">
-    <g transform="translate({values})">
+  <svg viewBox="0 0 {20} {height}">
+    <!--- <g transform="translate({margin.left},{margin.top})"> --->
+    <g transform={scale}>
+      <circle cx= {values[0] } cy={innerHeight / 2} r="2" />
+      <circle cx={values[1] } cy={innerHeight / 2}  r="2" />
+      <circle cx={values[2] } cy={innerHeight / 2} r="2" />
+      <circle cx={values[3]} cy={innerHeight / 2}  r="2" />
+      <circle cx={values[4]} cy={innerHeight / 2}  r="2" />
 
-    <circle cx = {values} cy = {innerHeight / 2} r=10 />
       <!--  -->
     </g>
   </svg>
