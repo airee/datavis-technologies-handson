@@ -19,7 +19,7 @@
     <g transform="translate({margin.left},{margin.top})">
     <g transform="translate({values})">
 
-    <circle cx = {innerHeight / 2} cy = {values} r=10 />
+    <circle cx = {values} cy = {innerHeight / 2} r=10 />
       <!--  -->
     </g>
   </svg>
