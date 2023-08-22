@@ -6,22 +6,45 @@
     const innerWidth = width - margin.left - margin.right;
     const innerHeight = height - margin.top - margin.bottom;
   
+    // Array
+    const values = [2, 4, 6, 7, 9];
+  </script>
+  
+  <svg viewBox="0 0 {width} {height}">
+    <g transform="translate({margin.left},{margin.top})">
+      <!--  -->
+    </g>
+  </svg>
+  
+  
+<!--- 
+<script>
+    // Dimensions
+    const width = 800;
+    const height = 100;
+    const margin = { top: 5, right: 5, bottom: 5, left: 5 };
+    const innerWidth = width - margin.left - margin.right;
+    const innerHeight = height - margin.top - margin.bottom;
+  
     import { scaleLinear } from 'd3-scale';
     import { scaleLog } from 'd3-scale';
-    const scale = d3.scaleLog().
+    const xscale = d3.scaleLog().
         domain([2, 9]).
         range([0, 3]);
   
 
     const values = [2, 4, 6, 7, 9];
     const logvalues = scale({values});
+
+    const x_axis = d3.axisBottom(xscale);
+  
   </script>
 
 
   <svg viewBox="0 0 {width } {height}">
     <g transform="translate({margin.left},{margin.top})"> 
-     <!-- <g transform={scale}> -->
-    
+    <g transform={xscale}>
+
       <circle cx={values} cy={innerHeight / 2} r="2" />
       <circle cx={values } cy={innerHeight / 2}  r="2" />
       <circle cx={values } cy={innerHeight / 2} r="2" />
@@ -31,3 +54,5 @@
         <!--  -->
     </g>
   </svg>
+
+  --->
