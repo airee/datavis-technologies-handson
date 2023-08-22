@@ -1,58 +1,36 @@
 <script>
-    // Dimensions
-    const width = 800;
-    const height = 100;
-    const margin = { top: 5, right: 5, bottom: 5, left: 5 };
-    const innerWidth = width - margin.left - margin.right;
-    const innerHeight = height - margin.top - margin.bottom;
-  
-    // Array
-    const values = [2, 4, 6, 7, 9];
-  </script>
-  
-  <svg viewBox="0 0 {width} {height}">
-    <g transform="translate({margin.left},{margin.top})">
-      <!--  -->
-    </g>
-  </svg>
-  
-  
-<!--- 
-<script>
-    // Dimensions
-    const width = 800;
-    const height = 100;
-    const margin = { top: 5, right: 5, bottom: 5, left: 5 };
-    const innerWidth = width - margin.left - margin.right;
-    const innerHeight = height - margin.top - margin.bottom;
-  
-    import { scaleLinear } from 'd3-scale';
-    import { scaleLog } from 'd3-scale';
-    const xscale = d3.scaleLog().
-        domain([2, 9]).
-        range([0, 3]);
-  
+  let datapoints = [{x: 100, y: 100, value: 9},
+                    {x: 150, y: 275, value: 11},
+                    {x: 10, y: 101, value: 72},
+                    {x: 80, y: 183, value: 2},
+                    {x: 350, y: 45, value: 10},
+                    {x: 201, y: 285, value: 109},
+                    {x: 150, y: 306, value: 24},
+                    {x: 90, y: 102, value: -4},
+                    {x: 73, y: 39, value: 88},
+                    {x: 332, y: 269, value: 8}]
+</script>
 
-    const values = [2, 4, 6, 7, 9];
-    const logvalues = scale({values});
+<style>
+  svg {
+    background-color: whitesmoke;
+  }
+  circle {
+    fill: steelblue;
+  }
+  rect {
+    fill: red;
+  }
+</style>
 
-    const x_axis = d3.axisBottom(xscale);
-  
-  </script>
+<svg width=400 height=400>
+  {#each datapoints as datapoint}
+    {#if datapoint.value > 10}
+      <circle cx={datapoint.x} cy={datapoint.y} r=10 />
+    {:else}
+      <rect x={datapoint.x} y={datapoint.y} width=10 height=10 />
+    {/if}
+  {/each}
+</svg>
 
 
-  <svg viewBox="0 0 {width } {height}">
-    <g transform="translate({margin.left},{margin.top})"> 
-    <g transform={xscale}>
-
-      <circle cx={values} cy={innerHeight / 2} r="2" />
-      <circle cx={values } cy={innerHeight / 2}  r="2" />
-      <circle cx={values } cy={innerHeight / 2} r="2" />
-      <circle cx={values} cy={innerHeight / 2}  r="2" />
-      <circle cx={values} cy={innerHeight / 2}  r="2" />
-      
-        <!--  -->
-    </g>
-  </svg>
-
-  --->
